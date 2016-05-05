@@ -1,9 +1,11 @@
 import Data.Char
 
-unrle :: Eq a => [(Int, a)] -> [a]
+type RLE a = [(Int, a)]
+
+unrle :: Eq a => RLE a -> [a]
 unrle = concatMap (uncurry replicate)
 
-s_to_rle :: String -> [(Int, Char)]
+s_to_rle :: String -> RLE Char
 s_to_rle "" = []
 s_to_rle (s:ss) = if isDigit s
                   then let (n,c:cs) = span isDigit (s:ss)
