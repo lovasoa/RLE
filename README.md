@@ -1,5 +1,5 @@
 # RLE
-Run-length encoding and decoding in haskell.
+**Run-length encoding** and decoding in haskell.
 
 ## Repository contents
  * `rle.hs` : Compute the run length encoding of the standars input and print it on the standart output
@@ -9,4 +9,17 @@ Run-length encoding and decoding in haskell.
 ```sh
 $ ghc rle.hs
 $ ghc unrle.hs
+```
+
+## Examples
+
+### rle
+```sh
+$ echo -n "boom" | ./rle 
+1b2o1m
+```
+### unrle
+```sh
+$ echo -n "boom" | ./rle 
+1b2o1m
 ```
