@@ -20,6 +20,6 @@ $ echo -n "boom" | ./rle
 ```
 ### unrle
 ```sh
-$ echo -n "boom" | ./rle 
+$ echo -n "1b2o1m" | ./unrle 
 1b2o1m
 ```
